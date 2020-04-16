@@ -1,5 +1,5 @@
-#自动调用api保活，加密版
-name: Auto Api Secret
+#自动调用API保活，加密版
+name: MS Office AutoSubscribeService with GitHub
 
 on: 
   release:
@@ -50,9 +50,9 @@ jobs:
     - name: Commit #上传新的refresh_token到仓库
       run: |
         git config --global user.email AutoupdateRobot@email.com
-        git config --global user.name AutoupdateRobot
+        git config --global user.name MSOfficeAutoSubscribeService
         git add .
-        git commit -m "update new refresh_token" -a
+        git commit -m "Update new refresh_token with MS Office AutoSubscribeService" -a
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
